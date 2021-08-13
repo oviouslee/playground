@@ -1,0 +1,25 @@
+<section fxLayout="row"
+         fxLayoutAlign="start center"
+         class="p4 mb8">
+  <p class="mat-title"
+     fxFlex
+     [style.margin.px]="0">{{heading}}</p>
+  <button mat-icon-button
+          [matTooltip]="navTip"
+          [disabled]="navDisabled"
+          (click)="navigate.emit(folder)">
+    <mat-icon>{{navIcon}}</mat-icon>
+  </button>
+  <button [routerLink]="root"
+          mat-icon-button
+          [matTooltip]="homeTip"
+          [disabled]="homeDisabled">
+    <mat-icon>{{homeIcon}}</mat-icon>
+  </button>
+  <button mat-icon-button
+          [ngClass]="isLight ? 'color-amber' : 'color-text'"
+          (click)="theme.emit()">
+    <mat-icon *ngIf="isLight">{{lightIcon}}</mat-icon>
+    <mat-icon *ngIf="!(isLight)">{{darkIcon}}</mat-icon>
+  </button>
+</section>

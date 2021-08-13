@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Playground.Core\Playground.Core.csproj" />
+    <ProjectReference Include="..\Playground.Data\Playground.Data.csproj" />
+    <ProjectReference Include="..\Playground.Identity\Playground.Identity.csproj" />
+  </ItemGroup>
+
+</Project>
