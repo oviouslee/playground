@@ -1,4 +1,5 @@
 export * from './abstract';
+export * from './api';
 
 export * from './banner.service';
 export * from './core.service';
